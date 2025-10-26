@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvin Darson's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            padding: 100px 20px 20px;
+            min-height: 100vh;
+        }
+        #home {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #home img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid white;
+        }
+        #about {
+            background-color: #ecf0f1;
+        }
+        #skills {
+            background-color: #f9f9f9;
+        }
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            height: 20px;
+            margin: 10px 0;
+        }
+        .skill-fill {
+            background-color: #3498db;
+            height: 100%;
+            border-radius: 10px;
+            transition: width 2s ease-in-out;
+        }
+        #education {
+            background-color: #ecf0f1;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #3498db;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+        #contact {
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s, transform 1s;
+        }
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Desvin Darson's Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="ChatGPT Image 18 Sep 2025, 06.55.11.png" alt="Desvin Darson's Photo" class="animate-on-scroll">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! I'm Desvin Darson, a passionate student in Information Systems. Explore my journey, skills, and achievements below.</p>
+    </section>
+
+    <section id="about" class="container animate-on-scroll">
+        <h2>About Me</h2>
+        <p>Hi there! My name is Desvin Darson, and I am currently a dedicated student pursuing a degree in Information Systems at Mahaboddhi University. Born and raised in a vibrant community, I've always been fascinated by the intersection of technology and human needs. From a young age, I found myself tinkering with computers, curious about how they work and how they can solve real-world problems.</p>
+        <p>As a student in Information Systems, I am honing my skills in various areas such as database management, software development, and system analysis. My academic journey has been enriched by hands-on projects, where I've collaborated with peers to build applications that address everyday challenges. I believe in the power of technology to drive positive change, and I'm eager to contribute to innovative solutions in the digital world.</p>
+        <p>Outside of academics, I enjoy exploring new technologies, reading about emerging trends in AI and cybersecurity, and participating in coding challenges. I'm also an avid gamer, which has sharpened my problem-solving abilities and teamwork skills. My goal is to become a proficient IT professional who can bridge the gap between technical expertise and business strategy.</p>
+        <p>Feel free to connect with me to discuss ideas, collaborations, or just to chat about the latest in tech!</p>
+    </section>
+
+    <section id="skills" class="container animate-on-scroll">
+        <h2>Skills</h2>
+        <p>Here are some of the key skills I've developed through my studies and personal projects. While I'm still building my expertise, I'm committed to continuous learning and improvement.</p>
+        <div>
+            <h3>Adobe (Graphic Design Tools)</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 1%;"></div>
+            </div>
+            <p>Basic proficiency in Adobe Creative Suite, focusing on Photoshop and Illustrator for design tasks.</p>
+        </div>
+        <div>
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 1%;"></div>
+            </div>
+            <p>Introductory knowledge of Python for scripting and basic programming, including data manipulation and automation.</p>
+        </div>
+        <div>
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 1%;"></div>
+            </div>
+            <p>Fundamental understanding of HTML for web development, creating structured and semantic web pages.</p>
+        </div>
+        <p>I'm actively expanding my skill set through coursework and self-study, aiming to reach higher proficiency levels in these and other technologies.</p>
+    </section>
+
+    <section id="education" class="container animate-on-scroll">
+        <h2>Education</h2>
+        <p>My educational background has laid a strong foundation for my career in Information Systems. Here's a timeline of my academic journey:</p>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>TK (Mahaboddhi)</h3>
+                 education b<p>during Mahaboddhi for study</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>SD (Mahaboddhi)</h3>
+                    <p>During Mahaboddhi, I for study</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>SMP (Mahaboddhi)</h3>
+h                    <p>In Mahaboddhi, I explored more and study</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>SMA (Mahaboddhi)</h3>
+                    <p>Mahaboddhi as a pivotal time where I delved into study</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3> University internasional batam- Information Systems</h3>
+                    <p>Currently pursuing my degree here, focusing on system design, programming, and IT management. I've engaged in group projects and internships to apply theoretical knowledge practically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container animate-on-scroll">
+        <h2>Contact Me</h2>
+        <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out using the form below or via my contact details.</p>
+        <p><strong>Email:</strong> desv19738@example.com</p>
+        <p><strong>Phone:</strong> +62 137 223 2323</p>
+        <p><strong>Address:</strong> Sandona Millazo ll no 7</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="responseMessage" style="display: none; color: green; margin-top: 10px;">Thank you! Your message has been sent.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Desvin Darson. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animate on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate skill bars on scroll
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const fills = entry.target.querySelectorAll('.skill-fill');
+                    fills.forEach(fill => {
+                        fill.style.width = fill.style.width; // Trigger animation
+                    });
+                }
+            });
+        });
+
+        skillObserver.observe(document.getElementById('skills'));
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate sending message (in a real app, use AJAX to send to server)
+            document.getElementById('responseMessage').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
